@@ -1,0 +1,55 @@
+{
+  "name": "@ludovicofischer/with-something-collection",
+  "version": "1.0.0",
+  "description": "Render props component to help managing a set of keyed items",
+  "module": "dist/module.js",
+  "main": "dist/bundle.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/react": "^16.3.14",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "husky": "^rm di0.14.3",
+    "jest": "^22.4.3",
+    "prettier": "^1.12.1",
+    "pretty-quick": "^1.5.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-testing-library": "^3.1.0",
+    "rollup": "^0.59.1",
+    "rollup-plugin-typescript2": "^0.14.0",
+    "semantic-release": "^15.4.1",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.9.0-rc"
+  },
+  "peerDependencies": {
+    "react": "^16.3.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c",
+    "precommit": "pretty-quick --staged",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Ludovico Fischer",
+  "license": "MIT",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(src/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

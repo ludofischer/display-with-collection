@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "strict": true,
+      "module": "ES6",
+      "target": "ES2015",
+      "jsx": "react",
+      "esModuleInterop": true,
+      "declaration": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
