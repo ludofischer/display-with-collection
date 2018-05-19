@@ -9,23 +9,23 @@ export default class WithListOfSomething<N> extends Component<
 > {
   constructor(props: Props<N>) {
     super(props);
-    this.removeNotification = this.removeNotification.bind(this);
-    this.addNotification = this.addNotification.bind(this);
-    this.state = { notifications: new Map<number, N>(), currentIndex: 0 };
+    this.removeItem = this.removeItem.bind(this);
+    this.addItem = this.addItem.bind(this);
+    this.state = { items: new Map<number, N>(), currentIndex: 0 };
   }
 
-  removeNotification(index: number) {
+  removeItem(index: number) {
     this.setState(prevState => {
-      prevState.notifications.delete(index);
-      return { notifications: prevState.notifications };
+      prevState.items.delete(index);
+      return { items: prevState.items };
     });
   }
 
-  addNotification(notification: N) {
+  addItem(item: N) {
     this.setState(prevState => {
-      prevState.notifications.set(prevState.currentIndex, notification);
+      prevState.items.set(prevState.currentIndex, item);
       return {
-        notifications: prevState.notifications,
+        items: prevState.items,
         currentIndex: prevState.currentIndex + 1
       };
     });
@@ -35,9 +35,9 @@ export default class WithListOfSomething<N> extends Component<
     return (
       <div>
         {this.props.render({
-          notifications: Array.from(this.state.notifications.values()),
-          addNotification: this.addNotification,
-          removeNotification: this.removeNotification
+          items: Array.from(this.state.items.values()),
+          addItem: this.addItem,
+          removeItem: this.removeItem
         })}
       </div>
     );

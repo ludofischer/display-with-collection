@@ -3,34 +3,34 @@ import { render, Simulate } from 'react-testing-library';
 import 'dom-testing-library/extend-expect';
 import ListOfSomething from '../index.tsx';
 
-describe('Displaying notifications', () => {
+describe('Displaying items', () => {
   const addLabel = 'Add';
   const removeLabel = 'Remove';
   const message = 'Hello';
   const composite = (
           <ListOfSomething<{ message: string}>
-      render={({ notifications, addNotification, removeNotification }) => (
-        <div>
-          {notifications.map(notification => (
-            <p key={notification.message}>{notification.message}</p>
-          ))}
-          <button onClick={() => addNotification({ message })}>
+            render={({ items, addItem, removeItem }) => (
+              <div>
+                {items.map(item => (
+                  <p key={item.message}>{item.message}</p>
+                ))}
+          <button onClick={() => addItem({ message })}>
             {addLabel}
           </button>
-              <button onClick={() => removeNotification(0)}>{removeLabel}</button>
+              <button onClick={() => removeItem(0)}>{removeLabel}</button>
         </div>
       )}
     />
   );
 
-  it('adds a notification', () => {
+  it('adds an item', () => {
     const utils = render(composite);
     const button = utils.getByText(addLabel);
     Simulate.click(button);
     expect(utils.getByText(message)).toBeInTheDOM();
   });
 
-  it('removes a notification', () => {
+  it('removes an item', () => {
     const utils = render(composite);
     const addButton = utils.getByText(addLabel);
     const removeButton = utils.getByText(removeLabel);
