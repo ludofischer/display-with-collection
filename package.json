@@ -1,7 +1,7 @@
 {
   "name": "@ludovicofischer/display-with-collection",
   "version": "1.0.0",
-  "description": "Render props component to help managing a set of keyed items",
+  "description": "Render props component to manage a collection of keyed items",
   "module": "dist/module.js",
   "main": "dist/bundle.js",
   "dependencies": {},
