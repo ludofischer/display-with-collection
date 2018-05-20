@@ -1,26 +1,31 @@
 {
-  "name": "@ludovicofischer/with-something-collection",
+  "name": "@ludovicofischer/display-with-collection",
   "version": "1.0.0",
   "description": "Render props component to help managing a set of keyed items",
   "module": "dist/module.js",
   "main": "dist/bundle.js",
   "dependencies": {},
   "devDependencies": {
+    "@storybook/addon-actions": "^4.0.0-alpha.7",
+    "@storybook/addon-links": "^4.0.0-alpha.7",
+    "@storybook/addons": "^4.0.0-alpha.7",
+    "@storybook/react": "^4.0.0-alpha.7",
     "@types/jest": "^22.2.3",
     "@types/react": "^16.3.14",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "husky": "^0.14.3",
-    "jest": "^22.4.3",
+    "jest": "^22.4.4",
     "prettier": "^1.12.1",
     "pretty-quick": "^1.5.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-testing-library": "^3.1.0",
+    "react-testing-library": "^3.1.3",
     "rollup": "^0.59.1",
     "rollup-plugin-typescript2": "^0.14.0",
     "semantic-release": "^15.4.1",
     "ts-jest": "^22.4.6",
+    "ts-loader": "^4.3.0",
     "typescript": "^2.9.0-rc"
   },
   "peerDependencies": {
@@ -33,9 +38,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "keywords": [
-    "react"
-  ],
+  "keywords": ["react"],
   "author": "Ludovico Fischer",
   "license": "MIT",
   "jest": {
@@ -43,13 +46,6 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(src/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   }
 }
