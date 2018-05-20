@@ -2,6 +2,10 @@
   "name": "@ludovicofischer/display-with-collection",
   "version": "1.0.0",
   "description": "Render props component to manage a collection of keyed items",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ludovicofischer/display-with-collection.git"
+  },
   "module": "dist/module.js",
   "main": "dist/bundle.js",
   "dependencies": {},
@@ -38,9 +42,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "files": ["dist/bundle.js", "dist/bundle.es.js", "dist/types.d.ts"],
   "keywords": ["react"],
   "author": "Ludovico Fischer",
-  "license": "MIT",
+  "license": "LGPL-3.0-or-later",
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
