@@ -7,7 +7,7 @@ import WithCollection from '@ludovicofischer/display-with-collection';
 function AlertDisplay() {
   return (
     <WithCollection
-      render={({ items, addItem, removeItem }) => (
+      children={({ items, addItem, removeItem }) => (
         <React.Fragment>
           {items.map((item, index) => (
             <Alert message={item.message} key={index} closable />

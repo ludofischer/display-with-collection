@@ -1,28 +1,28 @@
 {
   "name": "with-antd",
   "version": "1.0.0",
-  "description": "",
+  "description": "An example of using the with something component with AntD notifications",
   "main": "index.js",
   "scripts": {
     "dev": "BABEL_ENV=development webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@ludovicofischer/display-with-collection":
-      "file:../notifications/ludovicofischer-display-with-collection-1.0.0.tgz",
-    "antd": "^3.5.2",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "@ludovicofischer/display-with-collection": "file:../../ludovicofischer-display-with-collection-1.0.0.tgz",
+    "antd": "^3.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
     "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-react-app": "^3.1.1",
     "css-loader": "^0.28.11",
     "style-loader": "^0.21.0",
-    "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3"
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.1"
   }
 }

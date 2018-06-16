@@ -34,7 +34,7 @@ export default class WithListOfSomething<N> extends Component<
   render() {
     return (
       <div>
-        {this.props.render({
+        {this.props.children({
           items: Array.from(this.state.items.values()),
           addItem: this.addItem,
           removeItem: this.removeItem

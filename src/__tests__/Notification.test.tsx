@@ -8,16 +8,12 @@ describe('Displaying items', () => {
   const removeLabel = 'Remove';
   const message = 'Hello';
   const composite = (
-          <ListOfSomething<{ message: string}>
-            render={({ items, addItem, removeItem }) => (
-              <div>
-                {items.map(item => (
-                  <p key={item.message}>{item.message}</p>
-                ))}
-          <button onClick={() => addItem({ message })}>
-            {addLabel}
-          </button>
-              <button onClick={() => removeItem(0)}>{removeLabel}</button>
+    <ListOfSomething<{ message: string }>
+      render={({ items, addItem, removeItem }) => (
+        <div>
+          {items.map(item => <p key={item.message}>{item.message}</p>)}
+          <button onClick={() => addItem({ message })}>{addLabel}</button>
+          <button onClick={() => removeItem(0)}>{removeLabel}</button>
         </div>
       )}
     />
