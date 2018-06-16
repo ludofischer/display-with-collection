@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ludovicofischer/display-with-collection.svg?branch=master)](https://travis-ci.com/ludovicofischer/display-with-collection)
+
 A React component that manages a collection of items for your render props.
 
 This was born as an experiment to see how deep you could go with separating building blocks
