@@ -9,7 +9,7 @@ describe('Displaying items', () => {
   const message = 'Hello';
   const composite = (
     <ListOfSomething<{ message: string }>
-      render={({ items, addItem, removeItem }) => (
+      children={({ items, addItem, removeItem }) => (
         <div>
           {items.map(item => <p key={item.message}>{item.message}</p>)}
           <button onClick={() => addItem({ message })}>{addLabel}</button>
