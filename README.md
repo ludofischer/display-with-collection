@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/ludovicofischer/display-with-collection.svg?branch=master)](https://travis-ci.com/ludovicofischer/display-with-collection)
+[![Build Status](https://travis-ci.com/ludovicofischer/display-with-collection.svg?branch=master)](https://travis-ci.com/ludovicofischer/display-with-collection) [![Greenkeeper badge](https://badges.greenkeeper.io/ludovicofischer/display-with-collection.svg)](https://greenkeeper.io/)
 
 A React component that manages a collection of items for your render props.
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, Simulate } from 'react-testing-library';
+import { render, fireEvent, cleanup } from 'react-testing-library';
 import 'dom-testing-library/extend-expect';
 import ListOfSomething from '../index.tsx';
 
@@ -19,10 +19,12 @@ describe('Displaying items', () => {
     />
   );
 
+  afterEach(cleanup);
+
   it('adds an item', () => {
     const utils = render(composite);
     const button = utils.getByText(addLabel);
-    Simulate.click(button);
+    fireEvent.click(button);
     expect(utils.getByText(message)).toBeInTheDOM();
   });
 
@@ -30,8 +32,8 @@ describe('Displaying items', () => {
     const utils = render(composite);
     const addButton = utils.getByText(addLabel);
     const removeButton = utils.getByText(removeLabel);
-    Simulate.click(addButton);
-    Simulate.click(removeButton);
+    fireEvent.click(addButton);
+    fireEvent.click(removeButton);
     expect(utils.queryByText(message)).toBeNull();
   });
 });

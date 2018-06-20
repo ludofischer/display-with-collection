@@ -1,0 +1,7 @@
+{
+  "groups": {
+    "default": {
+      "packages": ["examples/antd-notification/package.json", "package.json"]
+    }
+  }
+}
