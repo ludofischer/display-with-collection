@@ -1,6 +1,6 @@
 {
   "name": "@ludovicofischer/display-with-collection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render props component to manage a collection of keyed items",
   "repository": {
     "type": "git",
