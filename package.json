@@ -39,7 +39,8 @@
   "files": [
     "dist/bundle.js",
     "dist/bundle.es.js",
-    "dist/types.d.ts"
+    "dist/types.d.ts",
+    "dist/index.d.ts"
   ],
   "keywords": [
     "react"
