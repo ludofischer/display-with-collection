@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, cleanup } from 'react-testing-library';
-import 'dom-testing-library/extend-expect';
+import 'jest-dom/extend-expect';
 import ListOfSomething from '../index.tsx';
 
 describe('Displaying items', () => {
