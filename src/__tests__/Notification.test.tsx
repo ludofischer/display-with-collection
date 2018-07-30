@@ -11,7 +11,9 @@ describe('Displaying items', () => {
     <ListOfSomething<{ message: string }>
       children={({ items, addItem, removeItem }) => (
         <div>
-          {items.map(item => <p key={item.message}>{item.message}</p>)}
+          {items.map(item => (
+            <p key={item.message}>{item.message}</p>
+          ))}
           <button onClick={() => addItem({ message })}>{addLabel}</button>
           <button onClick={() => removeItem(0)}>{removeLabel}</button>
         </div>
@@ -25,7 +27,7 @@ describe('Displaying items', () => {
     const utils = render(composite);
     const button = utils.getByText(addLabel);
     fireEvent.click(button);
-    expect(utils.getByText(message)).toBeInTheDOM();
+    expect(utils.getByText(message)).toBeInTheDocument();
   });
 
   it('removes an item', () => {
