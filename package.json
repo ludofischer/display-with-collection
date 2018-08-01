@@ -49,6 +49,7 @@
   "author": "Ludovico Fischer",
   "license": "LGPL-3.0-or-later",
   "jest": {
+    "testURL": "http://localhost",
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
