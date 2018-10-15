@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent, cleanup } from 'react-testing-library';
 import 'jest-dom/extend-expect';
-import ListOfSomething from '../index.tsx';
+import ListOfSomething from '../index';
 
 describe('Displaying items', () => {
   const addLabel = 'Add';
