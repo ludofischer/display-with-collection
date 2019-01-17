@@ -20,7 +20,7 @@
     "jest": "^23.6.0",
     "jest-dom": "^3.0.0",
     "prettier": "^1.14.3",
-    "pretty-quick": "^1.8.0",
+    "pretty-quick": "^1.10.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-testing-library": "^5.2.0",
