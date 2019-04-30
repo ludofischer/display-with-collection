@@ -18,7 +18,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "husky": "^1.1.2",
     "jest": "^23.6.0",
-    "jest-dom": "^3.0.0",
+    "jest-dom": "^3.1.4",
     "prettier": "^1.14.3",
     "pretty-quick": "^1.8.0",
     "react": "^16.5.2",
