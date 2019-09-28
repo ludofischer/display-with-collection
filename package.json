@@ -21,7 +21,7 @@
     "jest-dom": "^4.0.0",
     "prettier": "^1.14.3",
     "pretty-quick": "^1.8.0",
-    "react": "^16.5.2",
+    "react": "^16.10.1",
     "react-dom": "^16.5.2",
     "react-testing-library": "^7.0.0",
     "rollup": "^1.0.0",
